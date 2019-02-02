@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans>
+			<bean  class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+			<bean id="dbc" class="bean.DBClass">
+				<property name="driver" value="com.mysql.jdbc.Driver"></property>
+				<property name="url" value="jdbc:mysql://localhost:3306/hostel"></property>
+				<property name="userName" value="root"></property>
+				<property name="password" value=""></property>
+			</bean>
+			
+			</beans>
+			
